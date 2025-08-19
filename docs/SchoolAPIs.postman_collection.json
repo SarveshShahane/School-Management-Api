@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "a73a7f41-1638-4062-9011-eba0148741cb",
+		"name": "School Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44273485",
+		"_collection_link": "https://lunar-9414948.postman.co/workspace/Lunar's-Workspace~4164854d-b82f-43f3-8baf-fa4868f3550f/collection/44273485-a73a7f41-1638-4062-9011-eba0148741cb?action=share&source=collection_link&creator=44273485"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/addSchool",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Green Valley High\",\r\n  \"address\": \"123 Park Ave\",\r\n  \"latitude\": 19.0760,\r\n  \"longitude\": 72.8777\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/addSchool",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addSchool"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/listSchools?lat=19.0760&lng=72.8777",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/listSchools?lat=19.0760&lng=72.8777",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"listSchools"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "19.0760"
+						},
+						{
+							"key": "lng",
+							"value": "72.8777"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
