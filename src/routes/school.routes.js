@@ -1,6 +1,4 @@
 import { Router } from "express";
-// import schoolSchema from "../validators/school.schema.js";
-// import listSchoolSchema from "../validators/school.schema.js";
 import {schoolSchema,listSchoolSchema} from "../validators/school.schema.js";
 import validate from "../middlewares/validate.js";
 import { addSchoolController,getSchoolsByDistance } from "../controllers/school.controller.js";

@@ -71,7 +71,7 @@ Content-Type: application/json
 
 ### List Schools by Proximity
 ```
-GET /api/listSchools?lat=19.0760&lng=72.8777&limit=10&offset=0&unit=km
+GET /api/listSchools?lat=19.0760&lng=72.8777
 ```
 
 ## Docker Usage
